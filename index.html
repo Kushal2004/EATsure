@@ -7,32 +7,23 @@
   <style>
     body {
       display: flex;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      background-color: #f8f9fa; /* Light background color */
-    }
-    .login-container {
-      background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent for background visibility */
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      text-align: center;
-      animation: fadeIn 1.5s ease-in-out;
-    }
-    .left-half {
-      flex: 1;
-      display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
-    }
-    .right-half {
-      flex: 1;
-      background-image: url('./background_index.png'); /* Sample image URL */
-      background-size: cover; /* Cover entire right half */
-      background-position: center; /* Center the image */
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background_index.png');
+      background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
+    }
+    .login-container {
+      background-color: rgba(255, 255, 255, 1); /* Slightly transparent for background visibility */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
     }
     img {
       width: 150px;
@@ -40,11 +31,7 @@
     }
     h2 {
       margin-bottom: 20px;
-      color: rgb(72, 61, 182); /* Custom color for heading */
-    }
-    h6 {
-      margin-bottom: 20px;
-      color: #555; /* Darker color for subtitle */
+      color: #333;
     }
     input[type="text"], input[type="password"] {
       width: 100%;
@@ -55,13 +42,13 @@
       transition: all 0.3s ease;
     }
     input[type="text"]:focus, input[type="password"]:focus {
-      border-color: rgb(72, 61, 182);
-      box-shadow: 0 0 8px rgba(72, 61, 182, 0.5);
+      border-color: #4CAF50;
+      box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
     }
     button {
       width: 100%;
       padding: 10px;
-      background-color: rgb(72, 61, 182); /* Custom Button Color */
+      background-color: #4CAF50;
       border: none;
       border-radius: 5px;
       color: #fff;
@@ -70,7 +57,7 @@
       transition: all 0.3s ease;
     }
     button:hover {
-      background-color: rgba(72, 61, 182, 0.8); /* Darker shade on hover */
+      background-color: #45a049;
       transform: scale(1.05);
     }
     @keyframes fadeIn {
@@ -80,19 +67,15 @@
   </style>
 </head>
 <body>
-  <div class="left-half">
-    <div class="login-container">
-      <img src="rebel-foods-logo.png" alt="Rebel Foods Logo">
-      <h2>Login to EatSure for Corporates</h2>
-      <h6>Use "admin" as Employee ID and password</h6>
-      <form onsubmit="return login(event)">
-        <input type="text" id="employeeID" placeholder="Employee ID" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  </div>
-  <div class="right-half">
+  <div class="login-container">
+    <img src="rebel-foods-logo.png" alt="Rebel Foods Logo">
+    <h2>Login to EatSure for Corporates</h2>
+    <h6>Use "admin" as Employee ID and password</h6>
+    <form onsubmit="return login(event)">
+      <input type="text" id="employeeID" placeholder="Employee ID" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
   </div>
 
   <script>
