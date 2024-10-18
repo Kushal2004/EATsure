@@ -22,21 +22,21 @@ const foodData = [
   { 
     category: "American", 
     items: [
-      { name: "Hamburger", price: "₹300", rating: 4, image: "https://via.placeholder.com/150" },
-      { name: "Hotdog", price: "₹250", rating: 3.5, image: "https://via.placeholder.com/150" },
-      { name: "Apple Pie", price: "₹200", rating: 4.2, image: "https://via.placeholder.com/150" },
-      { name: "Buffalo Wings", price: "₹400", rating: 4.3, image: "https://via.placeholder.com/150" },
-      { name: "BBQ Ribs", price: "₹900", rating: 4.5, image: "https://via.placeholder.com/150" }
+      { name: "Hamburger", price: "₹300", rating: 4, image: "./Images/hamburger.png" },
+      { name: "Hotdog", price: "₹250", rating: 3.5, image: "./Images/hotdog.png" },
+      { name: "Apple Pie", price: "₹200", rating: 4.2, image: "./Images/applepie.png" },
+      { name: "Buffalo Wings", price: "₹400", rating: 4.3, image: "./Images/buffaloribs.png" },
+      { name: "BBQ Ribs", price: "₹900", rating: 4.5, image: "./Images/bbqribs.png" }
     ] 
   },
   { 
     category: "American Fast Food", 
     items: [
-      { name: "Cheeseburger", price: "₹350", rating: 4.1, image: "https://via.placeholder.com/150" },
-      { name: "French Fries", price: "₹150", rating: 4, image: "https://via.placeholder.com/150" },
-      { name: "Chicken Nuggets", price: "₹300", rating: 3.8, image: "https://via.placeholder.com/150" },
-      { name: "Pizza", price: "₹600", rating: 4.4, image: "https://via.placeholder.com/150" },
-      { name: "Burrito", price: "₹450", rating: 4.2, image: "https://via.placeholder.com/150" }
+      { name: "Cheeseburger", price: "₹350", rating: 4.1, image: "./Images/Cheeseburger.png" },
+      { name: "French Fries", price: "₹150", rating: 4, image: "./Images/Frenchfries.png" },
+      { name: "Chicken Nuggets", price: "₹300", rating: 3.8, image: "./Images/chickennuggets.png" },
+      { name: "Pizza", price: "₹600", rating: 4.4, image: "./Images/pizza.png" },
+      { name: "Burrito", price: "₹450", rating: 4.2, image: "./Images/burrito.png" }
     ] 
   },
   { 
